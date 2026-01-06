@@ -83,6 +83,52 @@ b_12 = np.array([5, 6, 7, 8, 9])
 a_12 = a_12[np.isin(a_12,b_12,invert=True)]
 print(a_12)
 
+print()
+
 #13
 a_13 = np.array([1, 2, 3, 2, 3, 4, 3, 4, 5, 6])
 b_13 = np.array([7, 2, 10, 2, 7, 4, 9, 4, 9, 8])
+indices = np.where(np.isin(a_13, b_13))
+print(indices)
+
+print()
+
+#14
+a_14 = np.array([2, 6, 1, 9, 10, 3, 27])
+a_14 = a_14[(a_14 > 5) & (a_14 <= 10)]
+print(a_14)
+
+print()
+
+#16
+arr_16 = np.arange(9).reshape(3, 3)
+arr_16[:, [0, 1]] = arr_16[:, [1, 0]]
+print(arr_16)
+
+print()
+
+#17
+arr_17 = np.arange(9).reshape(3, 3)
+arr_17[[0, 1],:] = arr_17[[1,0],:]
+print(arr_17)
+
+print()
+
+#18
+arr_18 = np.arange(9).reshape(3, 3)
+arr_18[[0,-1], :] = arr_18[[-1,0], :]
+print(arr_18)
+
+print()
+
+#19
+arr_19 = np.arange(9).reshape(3, 3)
+arr_19[:,[0,-1]] = arr_19[:,[-1,0],]
+print(arr_19)
+
+print()
+
+#20
+arr_20 = np.random.random((5, 3))
+arr_20 = 5 + arr_20 * (10 - 5)
+print(arr_20)
