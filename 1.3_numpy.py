@@ -144,3 +144,98 @@ print(arr_20)
 z_3 = np.zeros(10)
 print(z_3)
 
+print()
+
+#4
+Z = np.zeros((10,10))
+print('Исходный вектор Z: \n', Z)
+print("Размер памяти занимаемый вектором Z: %d байт" % (Z.size * Z.itemsize))
+
+print()
+
+#5
+print(np.info(np.add))
+
+print()
+
+#6
+z_6 = np.ones(10,int)
+print(z_6)
+
+print()
+
+#7
+z_7 = np.arange(10,50)
+print(z_7)
+
+print()
+
+#8
+z_8 = np.arange(50)
+z_8 = z_8[::-1]
+print(z_8)
+
+print()
+
+#9
+z_9 = np.arange(9).reshape(3, 3)
+print(z_9)
+
+print()
+
+#10
+z_10 = np.array([1,2,0,0,4,0])
+print(z_10.nonzero())
+
+print()
+
+#11
+z_11 = np.ones(9,int).reshape((3,3))
+print(z_11)
+
+print()
+
+#12
+z_12 = np.random.randint(low=0 , high= 3,size=(3,3,3))
+print(z_12)
+
+print()
+
+#13
+z_13 = np.random.randint(low=0, high= 10,size=(10,10))
+print(z_13.min(),z_13.max())
+
+print()
+
+#14
+z_14 = np.random.randint(low=1,high=100,size=30)
+print(z_14.mean())
+
+print()
+
+#15
+z_15 = np.zeros((5,10))
+z_15[:,0],z_15[:,9] = 1,1
+z_15[0,:],z_15[4,:]=1,1
+print(z_15)
+
+print()
+
+#16
+z_16 = np.ones((5,5),int)
+z_16 = np.pad(z_16,pad_width=1)
+print(z_16)
+
+print()
+
+#18
+a_18 = 1+np.arange(4)
+z_18 = np.diag(a_18,k=-1)
+print(z_18)
+
+#19
+z_19 = np.zeros((8,8))
+z_19[::2,::2] = 1
+print(z_19)
+
+#20
