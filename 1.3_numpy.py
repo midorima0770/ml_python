@@ -132,3 +132,15 @@ print()
 arr_20 = np.random.random((5, 3))
 arr_20 = 5 + arr_20 * (10 - 5)
 print(arr_20)
+
+
+"""
+
+    https://www.kaggle.com/code/sokolovaleks/100-numpy-exercises-rus-version
+
+"""
+
+#3
+z_3 = np.zeros(10)
+print(z_3)
+
